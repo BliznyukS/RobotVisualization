@@ -9,11 +9,11 @@ public class RobotManager {
         // Количество сторон многоугольника
         final int COUNT = 12;
         // Длина стороны
-        final int SIDE = 100;
+        final int SIDE = 50;
 
         Robot robot = new Robot(200, 50);
         // Создаем замкнутую фигуру с количеством углов COUNT
-        for (int i = 0; i < COUNT; i++) {
+        for (double i = 0; i < COUNT; i++) {
             robot.forward(SIDE);
             robot.setCourse(robot.getCourse() + 360 / COUNT);
         }
